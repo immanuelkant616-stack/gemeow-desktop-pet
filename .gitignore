@@ -1,8 +1,28 @@
+# Local Python environments and caches
 .venv/
 venv/
 __pycache__/
 *.py[cod]
+.pytest_cache/
+
+# Personal conversations, settings and encrypted credentials
+data/
+chat_history.json
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.dpapi
+*.log
 .env
 .env.*
-chat_history.json
-*.log
+!.env.example
+
+# Test scratch directories and local packaging
+tests/core-tests-*/
+tests/secrets-test-*/
+tests/ui-test-*/
+tests/character-test-*/
+dist/
+build/
+*.zip
